@@ -101,8 +101,8 @@ while redo == 'Y' or redo == 'y':
         print("Invalid input. Please try again.")
 
 if changes:
-    open('db.txt', 'w').close()
-    file = open("db.txt", "a", encoding='utf-8')
+    open('[your storage file here]', 'w').close()
+    file = open("[your storage file here]", "a", encoding='utf-8')
     for service in db:
         file.write(service + "," + db[service][0] + "," + db[service][1] + '\n')
 
