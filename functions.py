@@ -10,7 +10,7 @@ def initializeDb(db):
             db[line[0]] = [line[1], line[2]]
 
 def storeInfo(service, emailUser, pw, db,s):
-    file = open("db.txt", "a", encoding='utf-8')
+    file = open("[your storage file here]", "a", encoding='utf-8')
     userHash = hashlib.sha256(emailUser)
     userHash = userHash.hexdigest()
     try:
